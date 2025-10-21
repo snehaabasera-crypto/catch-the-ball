@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catch The Ball</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background"></div>
+
+  <div class="game-wrapper">
+    <h1 class="title">🎯 Catch The Ball</h1>
+
+    <div class="hud">
+      <div class="card">⏱️ Time: <span id="time">30</span>s</div>
+      <div class="card">🏆 Score: <span id="score">0</span></div>
+    </div>
+
+    <div id="game-area"></div>
+
+    <button id="start-btn" class="start-btn">Start Game</button>
+  </div>
+
+  <div id="overlay" class="overlay hidden">
+    <div class="overlay-content">
+      <h2 id="final-text">Game Over!</h2>
+      <p id="final-score">Your Score: 0</p>
+      <button id="restart-btn">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
